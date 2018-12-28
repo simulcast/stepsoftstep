@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>#A595FF</title>
+    <meta name="description" content="hypertext audio">
+    <meta name="author" content="Tristan Rodman">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/howler.js"></script>
+    <script src="scripts/script.js"></script>
+        <script>
+        var sound = new Howl({
+            urls: ['audio/thirteen.mp3', 'audio/thirteen.ogg'],
+            loop: false,
+            volume: 0.5,
+            onend: function() {
+            console.log('Finished!');
+            delayedClose();
+            }
+        });
+    </script>
+</head>
+<body onload="init(); window.moveTo(randomX(), randomY());">
+    <div class="thirteen" onclick="open9();return false;">
+    </div>
+</body>
+</html>

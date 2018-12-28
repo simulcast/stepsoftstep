@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>#FF95EB</title>
+    <meta name="description" content="hypertext audio">
+    <meta name="author" content="Tristan Rodman">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/howler.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        function veryDelayedClose() {
+            sound.fade(0.5, 0.0, 3000);
+            timeoutID = window.setTimeout(window.close, 3000);
+        }
+        var sound = new Howl({
+            urls: ['audio/sixteen.mp3', 'audio/sixteen.ogg'],
+            loop: false,
+            volume: 0.5,
+            onend: function() {
+            console.log('Finished!');
+            veryDelayedClose();
+            }
+        });
+    </script>
+</head>
+
+<body onload="init(); window.moveTo(randomX(), randomY());">
+    <div class="sixteen" onclick="delayedClose();">
+    </div>
+</body>
+</html>

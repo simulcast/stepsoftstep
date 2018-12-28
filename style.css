@@ -1,0 +1,299 @@
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.splash {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);;
+}
+
+#pagetitle {
+    position: relative;
+    color: black;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Courier New';
+    font-size: 25vmin;
+}
+
+#instructions {
+    position: relative;
+    color: black;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New';
+    margin-top: 15%;
+    font-size: 5vmin;
+}
+#instructions {
+    position: relative;
+    color: black;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New';
+    margin-top: 15%;
+    font-size: 5vh;
+}
+
+#indexWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+}
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.soundbar {
+    clear: right;
+    width: 6.25%;
+    height: 100%;
+    background-color: #FF8686;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    z-index: 0;
+    cursor: pointer;
+}
+.soundbar:hover,
+.soundbar:focus,
+.soundbar:active {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+#one {
+    background-color: #FF9595;
+}
+
+.one {
+    position: absolute;
+    background-color: #FF9595;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#two {
+    background-color: #FFA195;
+}
+
+.two {
+    position: absolute;
+    background-color: #FFA195;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#three {
+    background-color: #FFBD95;
+}
+
+.three {
+    position: absolute;
+    background-color: #FFBD95;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#four {
+    background-color: #FFD195;
+}
+
+.four {
+    position: absolute;
+    background-color: #FFD195;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#five {
+    background-color: #FFE195;
+}
+
+.five {
+    position: absolute;
+    background-color: #FFE195;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#six {
+    background-color: #FFF495;
+}
+
+.six {
+    position: absolute;
+    background-color: #FFF495;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#seven {
+    background-color: #E4FF95;
+}
+
+.seven {
+    position: absolute;
+    background-color: #E4FF95;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#eight {
+    background-color: #B0FF95;
+}
+
+.eight {
+    position: absolute;
+    background-color: #B0FF95;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#nine {
+    background-color: #95FFE1;
+}
+
+.nine {
+    position: absolute;
+    background-color: #95FFE1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#ten {
+    background-color: #95E8FF;
+}
+
+.ten {
+    position: absolute;
+    background-color: #95E8FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#eleven {
+    background-color: #95D0FF;
+}
+
+.eleven {
+    position: absolute;
+    background-color: #95D0FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#twelve {
+    background-color: #95A7FF;
+}
+
+.twelve {
+    position: absolute;
+    background-color: #95A7FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#thirteen {
+    background-color: #A595FF;
+}
+
+.thirteen {
+    position: absolute;
+    background-color: #A595FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#fourteen {
+    background-color: #C695FF;
+}
+
+.fourteen {
+    position: absolute;
+    background-color: #C695FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#fifteen {
+    background-color: #E995FF;
+}
+
+.fifteen {
+    position: absolute;
+    background-color: #E995FF;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#sixteen {
+    background-color: #FF95EB;
+}
+
+.sixteen {
+    position: absolute;
+    background-color: #FF95EB;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

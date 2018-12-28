@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>playbar</title>
+    <meta name="description" content="hypertext audio">
+    <meta name="author" content="Tristan Rodman">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="scripts/howler.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a').click(function(e) {
+                var id = $(this).data("windowid");
+                if(id == null || id.closed) {
+                    id =  window.open($(this).attr("href"), '_blank', 'modal=yes');
+                }
+                id.focus();
+                $(this).data("windowid", id);
+                e.preventDefault();
+                return false;
+            });
+        });               
+        $(document).ready(function() {
+            $("#indexWrapper").click(function() {
+                $("#instructions").remove();
+            });
+        });
+        var sound = new Howl({
+            urls: ['audio/start.mp3', 'audio/start.ogg'],
+            loop: true,
+            volume: 0.5,
+            onend: function() {
+            console.log('Finished!');
+            }
+        });
+    </script>
+</head>
+<body onload="window.resizeTo(window.screen.availWidth, 300); window.moveTo(window.screen.availWidth, window.screen.height-300); init();">
+    <div class="wrapper">
+        <div class="soundbar" id="one" onclick="open1();return false">
+        </div>
+        <div class="soundbar" id="two" onclick="open2();return false;">
+        </div>
+        <div class="soundbar" id="three" onclick="open3();return false;">
+        </div>
+        <div class="soundbar" id="four" onclick="open4();return false;">
+        </div>
+        <div class="soundbar" id="five" onclick="open5();return false;">
+        </div>
+        <div class="soundbar" id="six" onclick="open6();return false;">
+        </div>
+        <div class="soundbar" id="seven" onclick="open7();return false;">
+        </div>
+        <div class="soundbar" id="eight" onclick="open8();return false;">
+        </div>
+        <div class="soundbar" id="nine" onclick="open9();return false;">
+        </div>
+        <div class="soundbar" id="ten" onclick="open10();return false;">
+        </div>
+        <div class="soundbar" id="eleven" onclick="open11();return false;">
+        </div>
+        <div class="soundbar" id="twelve" onclick="open12();return false;">
+        </div>
+        <div class="soundbar" id="thirteen" onclick="open13();return false;">
+        </div>
+        <div class="soundbar" id="fourteen" onclick="open14();return false;">
+        </div>
+        <div class="soundbar" id="fifteen" onclick="open15();return false;">
+        </div>
+        <div class="soundbar" id="sixteen" onclick="open16();return false;">
+        </div>
+    </div>
+</body>
+</html>
