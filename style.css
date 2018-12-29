@@ -36,29 +36,20 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 10%;
-    font-family: 'Courier New';
+    font-family: 'Helvetica';
+	font-color: white;
     font-size: 25vmin;
 }
 
 #instructions {
     position: relative;
-    color: black;
+    color: white;
     z-index: 10;
     width: 100%;
     text-align: center;
-    font-family: 'Courier New';
+    font-family: sans-serif;
     margin-top: 15%;
     font-size: 5vmin;
-}
-#instructions {
-    position: relative;
-    color: black;
-    z-index: 10;
-    width: 100%;
-    text-align: center;
-    font-family: 'Courier New';
-    margin-top: 15%;
-    font-size: 5vh;
 }
 
 #indexWrapper {
